@@ -1,0 +1,26 @@
+{
+  "name": "promise-keeper",
+  "version": "1.0.0",
+  "description": "An easily extendable lightweight promise api",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ZombieHippie/promise-keeper.git"
+  },
+  "keywords": [
+    "promises",
+    "promise api",
+    "promise.coffee",
+    "coffee promise"
+  ],
+  "author": "Cole Lawrence <cole@zombiehippie.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ZombieHippie/promise-keeper/issues"
+  },
+  "homepage": "https://github.com/ZombieHippie/promise-keeper",
+  "dependencies": {
+    "coffee-script": "~1.7",
+    "promise.coffee": "~1"
+  }
+}
