@@ -28,35 +28,6 @@ class PromiseKeeper
         def.resolve @_data[name]
       else
         def.resolve @_data[value]
-      def.promise 
-  
-  # Log current value with optional title
-  log: (title) ->
-    @then (value) ->
-      def = new Deferred
-      # Log
-      console.log("<#{title}>") if title?
-      console.log value
-      # Continue chain with value
-      def.resolve value
-      def.promise
- 
-  # Edit current value with function
-  edit: (fn) ->
-    @then (value) ->
-      def = new Deferred
-      def.resolve fn value
-      def.promise
- 
-  # Declare time to delay
-  delay: (time) ->
-    # Return function ((value)->) to .then((value)->)
-    @then (value) ->
-      def = new Deferred
-      setTimeout (->
-        def.resolve(value)
-      ), time
-      # Return the promise to .then(->return promise)
       def.promise
 
   useAll: (fns) ->
