@@ -1,6 +1,6 @@
 {
   "name": "promise-keeper",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "An easily extendable lightweight promise api",
   "main": "index.js",
   "repository": {
@@ -21,6 +21,6 @@
   "homepage": "https://github.com/ZombieHippie/promise-keeper",
   "dependencies": {
     "coffee-script": "~1.7",
-    "promise.coffee": "~1"
+    "promise.coffee": "~1.0"
   }
 }
